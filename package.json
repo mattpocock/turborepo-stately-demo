@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "postinstall": "manypkg check"
+    "postinstall": "manypkg check",
+    "release": "node ./scripts/tag-releases.js"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.3",

@@ -1,0 +1,23 @@
+name: Run Tests
+on: push
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+          cache: "yarn"
+
+      - name: Install
+        run: yarn install --frozen-lockfile --prefer-offline
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Test
+        run: yarn test
