@@ -1,0 +1,17 @@
+{
+  "extends": "@stately/tsconfig/base.json",
+  "compilerOptions": {
+    "types": [
+      "cypress"
+    ],
+    "isolatedModules": false
+  },
+  "include": [
+    "cypress"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}

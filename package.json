@@ -11,8 +11,10 @@
     "postinstall": "manypkg check && yarn p prisma:generate",
     "release": "node ./scripts/release.js",
     "p": "yarn workspace @stately/prisma",
+    "wc": "yarn workspace @stately/web-cypress",
+    "web": "yarn workspace @stately/web",
     "lint": "yarn workspaces run lint",
-    "test": "CI=true yarn workspaces run test"
+    "test": "CI=true yarn workspaces run test && yarn wc run test:cypress"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.3",
