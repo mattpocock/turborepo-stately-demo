@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && tsc"
+    "lint": "next lint && tsc",
+    "test": "echo \"No test needed!\""
   },
   "dependencies": {
     "@stately/ui": "*",

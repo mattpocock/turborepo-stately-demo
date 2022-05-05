@@ -11,7 +11,8 @@
     "postinstall": "manypkg check && yarn p prisma:generate",
     "release": "node ./scripts/release.js",
     "p": "yarn workspace @stately/prisma",
-    "lint": "yarn workspaces run lint"
+    "lint": "yarn workspaces run lint",
+    "test": "CI=true yarn workspaces run test"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.3",

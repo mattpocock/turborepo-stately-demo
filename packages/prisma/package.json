@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "prisma:generate": "prisma generate",
-    "lint": "tsc"
+    "lint": "tsc",
+    "test": "echo \"No test needed!\""
   },
   "dependencies": {
     "@prisma/client": "^3.6.0"
