@@ -1,0 +1,17 @@
+{
+  "name": "@stately/prisma",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "prisma": "^3.6.0"
+  }
+}

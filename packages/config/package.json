@@ -1,11 +1,15 @@
 {
-  "name": "config",
+  "name": "@stately/config",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "files": [
     "eslint-preset.js"
   ],
+  "scripts": {
+    "lint": "echo \"No lint needed!\"",
+    "test": "echo \"No test needed!\""
+  },
   "dependencies": {
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",

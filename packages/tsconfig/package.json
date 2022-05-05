@@ -1,5 +1,5 @@
 {
-  "name": "tsconfig",
+  "name": "@stately/tsconfig",
   "version": "0.0.1",
   "private": true,
   "main": "index.js",
@@ -7,5 +7,9 @@
     "base.json",
     "nextjs.json",
     "react-library.json"
-  ]
+  ],
+  "scripts": {
+    "lint": "echo \"No lint needed!\"",
+    "test": "echo \"No test needed!\""
+  }
 }

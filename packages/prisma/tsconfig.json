@@ -1,7 +1,7 @@
 {
-  "extends": "@stately/tsconfig/react-library.json",
+  "extends": "@stately/tsconfig/base.json",
   "include": [
-    "."
+    "src"
   ],
   "exclude": [
     "dist",

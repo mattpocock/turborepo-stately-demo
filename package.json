@@ -8,8 +8,10 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "postinstall": "manypkg check",
-    "release": "node ./scripts/release.js"
+    "postinstall": "manypkg check && yarn p prisma:generate",
+    "release": "node ./scripts/release.js",
+    "p": "yarn workspace @stately/prisma",
+    "lint": "yarn workspaces run lint"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.3",
