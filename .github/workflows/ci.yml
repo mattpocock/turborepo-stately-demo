@@ -18,3 +18,7 @@ jobs:
 
       - name: Test
         run: yarn test
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: mattpocock
+          TURBO_REMOTE_ONLY: "true"
