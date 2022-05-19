@@ -3,6 +3,14 @@
     "lint": {
       "dependsOn": [],
       "outputs": []
+    },
+    "test": {
+      "dependsOn": ["lint", "^build"],
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**"]
     }
   }
 }

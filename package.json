@@ -15,7 +15,7 @@
     "web": "yarn workspace @stately/web",
     "docs": "yarn workspace @stately/docs",
     "lint": "turbo run lint",
-    "test": "CI=true yarn workspaces run test && yarn wc run test:cypress"
+    "test": "CI=true turbo run test"
   },
   "dependencies": {
     "@manypkg/cli": "^0.18.0",
