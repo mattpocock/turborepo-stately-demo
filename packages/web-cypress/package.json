@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "tsc",
     "test": "echo \"No test needed!\"",
-    "test:cypress": "start-server-and-test \"(cd ../../apps/web && next dev)\" http://localhost:3000 \"cypress run\""
+    "test:cypress": "start-server-and-test \"(cd ../../apps/web && next start)\" http://localhost:3000 \"cypress run\""
   },
   "dependencies": {
     "@stately/web": "*"

@@ -11,6 +11,10 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"]
+    },
+    "test:cypress": {
+      "dependsOn": ["^build"],
+      "outputs": []
     }
   }
 }

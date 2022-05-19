@@ -17,7 +17,7 @@ jobs:
         run: yarn install --frozen-lockfile --prefer-offline
 
       - name: Test
-        run: yarn test
+        run: yarn turbo run test lint test:cypress
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: mattpocock
