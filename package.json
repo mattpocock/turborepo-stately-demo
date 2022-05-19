@@ -14,14 +14,15 @@
     "wc": "yarn workspace @stately/web-cypress",
     "web": "yarn workspace @stately/web",
     "docs": "yarn workspace @stately/docs",
-    "lint": "yarn workspaces run lint",
+    "lint": "turbo run lint",
     "test": "CI=true yarn workspaces run test && yarn wc run test:cypress"
   },
   "dependencies": {
     "@manypkg/cli": "^0.18.0",
     "husky": ">=6",
     "lint-staged": ">=10",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "turbo": "^1.2.9"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json}": "prettier --write"

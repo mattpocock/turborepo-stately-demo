@@ -1,0 +1,8 @@
+{
+  "pipeline": {
+    "lint": {
+      "dependsOn": [],
+      "outputs": []
+    }
+  }
+}
