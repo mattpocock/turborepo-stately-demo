@@ -13,6 +13,7 @@
     "p": "yarn workspace @stately/prisma",
     "wc": "yarn workspace @stately/web-cypress",
     "web": "yarn workspace @stately/web",
+    "docs": "yarn workspace @stately/docs",
     "lint": "yarn workspaces run lint",
     "test": "CI=true yarn workspaces run test && yarn wc run test:cypress"
   },
